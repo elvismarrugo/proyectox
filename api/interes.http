@@ -1,0 +1,25 @@
+GET http://localhost:4000/videos
+
+###
+GET http://localhost:4000/videos/60775a9777ab771a30db6d2d
+
+### create video
+POST http://localhost:4000/videos
+Content-Type: application/json
+
+{
+  "desde": "01/03/2021",
+  "hasta": "30/03/2021",
+  "tea": "r"
+}
+
+###
+DELETE http://localhost:4000/videos/60775a9777ab771a30db6d2d
+
+###
+PUT  http://localhost:4000/videos/60776065f1de861f4e925c93
+Content-Type: application/json
+
+{
+  "tea": "18.00"
+}
